@@ -1,11 +1,10 @@
 class script(object):
-    START_TXT = """Hello {},
-My Name is <a href=https://t.me/{}>{}</a>, 𝙸 Can Provide Movies, Just Add me To Your Group & Enjoy 😍"""
-    HELP_TXT = """𝙷𝙴𝚈 {}
-Here is the help commands."""
-    ABOUT_TXT = """✯ My Name : {}
-✯ Cʀᴇᴀᴛᴏʀ : <a href=https://t.me/media_search_bot>Hᴀɴᴀ</a>
-✯ Uᴘᴅᴀᴛᴇs : <a href=https://t.me/M2LINKS>ᴍ𝟸ʟɪɴᴋs</a>"""
+    START_TXT = """<b>Hᴇʟʟᴏ {},</b>
+<b>ᴍʏ ɴᴀᴍᴇ ɪs <a href=https://t.me/{}>{}</a>,𝙸 ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ᴍᴏᴠɪᴇs 🎥 ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ..</b>""
+    HELP_TXT = """<b>𝙷𝙴𝚈 {}</b>
+<b>ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ᴄᴏᴍᴍᴀɴᴅs.</b>"""
+    ABOUT_TXT = """❤️ <b>Mʏ Nᴀᴍᴇ : {}</b>
+🎭 <b>Uᴘᴅᴀᴛᴇs : <a href=https://t.me/M2LINKS>ᴍ𝟸ʟɪɴᴋs</a></b>"""
     SOURCE_TXT = """<b>NOTE:</b>
 - This code is not open source project. 
 - Join Here - https://t.me/M2LINKS
