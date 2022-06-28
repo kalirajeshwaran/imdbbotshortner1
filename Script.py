@@ -1,10 +1,10 @@
 class script(object):
-    START_TXT = """<b>Hᴇʟʟᴏ {},</b>
-<b>ᴍʏ ɴᴀᴍᴇ ɪs <a href=https://t.me/{}>{}</a>,𝙸 ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ᴍᴏᴠɪᴇs 🎥 ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ..</b>""
-    HELP_TXT = """<b>𝙷𝙴𝚈 {}</b>
-<b>ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ᴄᴏᴍᴍᴀɴᴅs.</b>"""
-    ABOUT_TXT = """❤️ <b>Mʏ Nᴀᴍᴇ : {}</b>
-🎭 <b>Uᴘᴅᴀᴛᴇs : <a href=https://t.me/M2LINKS>ᴍ𝟸ʟɪɴᴋs</a></b>"""
+    START_TXT = """<b>Hᴇʟʟᴏ {},
+ᴍʏ ɴᴀᴍᴇ ɪs <a href=https://t.me/{}>{}</a>,𝙸 ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ᴍᴏᴠɪᴇs 🎥 ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ..</b>""
+    HELP_TXT = """<b>𝙷𝙴𝚈 {}
+ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ᴄᴏᴍᴍᴀɴᴅs.</b>"""
+    ABOUT_TXT = """❤️ <b>Mʏ Nᴀᴍᴇ : {}
+🎭 Uᴘᴅᴀᴛᴇs : <a href=https://t.me/M2LINKS>ᴍ𝟸ʟɪɴᴋs</a></b>"""
     SOURCE_TXT = """<b>NOTE:</b>
 - This code is not open source project. 
 - Join Here - https://t.me/M2LINKS
