@@ -25,8 +25,6 @@ logger.setLevel(logging.ERROR)
 
 BUTTONS = {}
 SPELL_CHECK = {}
-DELETE_TIMER = int(os.environ.get('DELETE_TIMER', '400'))
-FILTER_DELETE_TIMER = int(os.environ.get('FILTER_DELETE_TIMER', DELETE_TIMER))
 
 @Client.on_message((filters.group | filters.private) & filters.text & ~filters.edited & filters.incoming)
 async def give_filter(client,message):
@@ -394,12 +392,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 await client.send_cached_media(
                     chat_id=query.from_user.id,
                     file_id=file_id,
-                    caption=f_caption+f"\n⚡ This File Will Be Deleting In {round(DELETE_TIMER/60)} Minutes. So Forward To Your Saved Messages ⚡.",
+                    caption=f_caption
 
                     )
-                await query.answer('Check PM, I have sent files in pm',show_alert = True)
-                await asyncio.sleep(DELETE_TIMER)
-                await feck.delete()
+                await query.answer('Check PM, I have sent files in pm',show_alert = True) 
         except UserIsBlocked:
             await query.answer('Unblock the bot mahn !',show_alert = True)
         except PeerIdInvalid:
@@ -431,10 +427,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await client.send_cached_media(
             chat_id=query.from_user.id,
             file_id=file_id,
-            caption=f_caption+f"\n⚡ This File Will Be Deleting In {round(DELETE_TIMER/60)} Minutes. So Forward To Your Saved Messages ⚡.",
+            caption=f_caption
             )
-            await asyncio.sleep(DELETE_TIMER)
-                await feck.delete()
+           
     elif query.data == "pages":
         await query.answer()
     elif query.data == "start":
@@ -684,20 +679,13 @@ async def auto_filter(client, msg, spoll=False):
             await feck.delete()
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
-            poster = pic.replace('.jpg', "._V1_UX360.jpg")
-            feck = await message.reply_photo(photo=poster, caption=cap[:1024]+f"\n\n`⚡ Your Request will Be Deleting In {round(FILTER_DELETE_TIMER/60)} Minutes ⚡.", reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(FILTER_DELETE_TIMER)
-            await feck.delete()        
+            poster = pic.replace('.jpg', "._V1_UX360.jpg")       
             except Exception as e:
             logger.exception(e)
-            feck=await message.reply_text(cap+f"\n\n`⚡ Your Request Will Be Deleting In {round(FILTER_DELETE_TIMER/60)} Minutes ⚡.", reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(FILTER_DELETE_TIMER)
-            await feck.delete()    
+            await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
        else:
-            feck=await message.reply_text(cap+f"\n\n`⚡ Your Request Will Be Deleting In {round(FILTER_DELETE_TIMER/60)} Minutes ⚡.", reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(FILTER_DELETE_TIMER)
-            await feck.delete()    
-       if spoll:
+            await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+      if spoll:
             await msg.message.delete()
         
 
