@@ -25,6 +25,8 @@ logger.setLevel(logging.ERROR)
 
 BUTTONS = {}
 SPELL_CHECK = {}
+DELETE_TIMER = int(os.environ.get('DELETE_TIMER', '400'))
+FILTER_DELETE_TIMER = int(os.environ.get('FILTER_DELETE_TIMER', DELETE_TIMER))
 
 @Client.on_message((filters.group | filters.private) & filters.text & ~filters.edited & filters.incoming)
 async def give_filter(client,message):
