@@ -1,8 +1,8 @@
 class script(object):
     START_TXT = """<b>Hᴇʟʟᴏ {},
 ᴍʏ ɴᴀᴍᴇ ɪs </b><a href=https://t.me/{}><b>{}</b></a><b>,𝙸 ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ᴍᴏᴠɪᴇs ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ</b>"""
-    HELP_TXT = """<b>𝙷𝙴𝚈 {},
-ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ᴄᴏᴍᴍᴀɴᴅs.<b/>"""
+    HELP_TXT = """<b>Hey {},
+Here is the Help Commands.<b/>"""
     ABOUT_TXT = """b"""
     SOURCE_TXT = """<b>NOTE:</b>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
