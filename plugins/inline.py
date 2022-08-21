@@ -87,17 +87,10 @@ async def answer(bot, query):
                            switch_pm_text=switch_pm_text,
                            switch_pm_parameter="okay")
 
-        def get_reply_markup(query):
+    def get_reply_markup(query):
 
-    buttons = [
-
-        [
-            InlineKeyboardButton('ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ', url=f'http://t.me/{temp.U_NAME}?start')
-        ]
-
-        ]
-
-    return InlineKeyboardMarkup(buttons)
+        buttons=
+        [InlineKeyboardButton('ꜱᴇᴀʀᴄʜ ʜᴇʀᴇ', url=f'http://t.me/{temp.U_NAME}?start')]
            
-  
-  
+        return InlineKeyboardMarkup(buttons)
+ 
