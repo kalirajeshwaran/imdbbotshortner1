@@ -89,7 +89,5 @@ async def answer(bot, query):
 
         def get_reply_markup(query):
 
-  
-    return InlineKeyboardMarkup(buttons)
-           
+
   
