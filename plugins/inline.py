@@ -89,8 +89,6 @@ async def answer(bot, query):
 
         def get_reply_markup(query):
 
- def get_reply_markup(query):
-
     buttons = [
 
         [
