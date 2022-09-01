@@ -398,9 +398,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
         except UserIsBlocked:
             await query.answer('Unblock the bot mahn !',show_alert = True)
         except PeerIdInvalid:
-            await query.answer(url=f"https://api.shareus.in/shortLink?token=xGzniHOkadfY4aP4HKbnGxHGGkv1&format=json&link=https://t.me/{temp.U_NAME}?start={file_id}")
+            url = f"https://api.shareus.in/shortLink?token=xGzniHOkadfY4aP4HKbnGxHGGkv1&format=json&link=https://t.me/{temp.U_NAME}?start={file_id}"
+            res = requests.get(url).json()
+            short_link = res["shortlink"]
+            await query.answer(url=short_link)
         except Exception as e:
-            await query.answer(url=f"https://api.shareus.in/shortLink?token=xGzniHOkadfY4aP4HKbnGxHGGkv1&format=json&link=https://t.me/{temp.U_NAME}?start={file_id}")
+            url = f"https://api.shareus.in/shortLink?token=xGzniHOkadfY4aP4HKbnGxHGGkv1&format=json&link=https://t.me/{temp.U_NAME}?start={file_id}"
+            res = requests.get(url).json()
+            short_link = res["shortlink"]
+            await query.answer(url=short_link)
 
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
