@@ -403,8 +403,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             res = requests.get(url).json()
             short_link = res["shortlink"]
             await query.answer(url=short_link)
-        except Exception as e:
-            await query.answer(url="https://t.me/{temp.U_NAME}?start={file_id}")
+       
 
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
