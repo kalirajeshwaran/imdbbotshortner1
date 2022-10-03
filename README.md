@@ -14,7 +14,7 @@
 
 
 ## Deploy
-<a href="https://heroku.com/deploy?template=https://github.com/PrinceStarLord/imdbbot">
+<a href="https://heroku.com/deploy?template=https://github.com/kalirajeshwaran/imdbbotshortner1">
 
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 
